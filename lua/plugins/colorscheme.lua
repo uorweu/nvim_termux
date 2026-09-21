@@ -1,10 +1,8 @@
 return {
-  "navarasu/onedark.nvim",
-  priority = 1000, -- make sure to load this before all the other start plugins
+  "nendix/zen.nvim",
+  lazy = true,
+  priority = 1000,
   config = function()
-    require("onedark").setup({
-      style = "dark",
-    })
-    require("onedark").load()
+    -- vim.cmd.colorscheme("zen")
   end,
 }

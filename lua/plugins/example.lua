@@ -187,7 +187,8 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "stylua",
+        -- android doesn't support this
+        --"stylua",
         "shellcheck",
         "shfmt",
         "flake8",
